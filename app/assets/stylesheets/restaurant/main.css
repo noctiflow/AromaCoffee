@@ -10,7 +10,8 @@ h1 {
     border: 1px solid rgba(47, 46, 47, 0.59);
 }
 .navactive{
-   border-bottom: 1px solid #6f9be8;
+   border-bottom: 2px solid #6f9be8;
+   margin-top: -5px;
 }
 p.desc-text{
     font-size: 20px;
@@ -142,6 +143,7 @@ h1, h2, p, span, a {
 .color_animation {
     text-decoration: initial;
     /* word-spacing: 5px; */
+    margin-top: -10px;
     margin-right: -30px;
     margin-left: -30px !important;
     color: white !important;
@@ -197,7 +199,7 @@ INTRO CONTAINER
 .follow_container {
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 25%;
     text-align: center;
 }
 .starter_follow {
@@ -215,7 +217,7 @@ INTRO CONTAINER
  }
 .second-title {
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 25px;
     font-style: italic;
     text-transform: capitalize;
 }
@@ -258,7 +260,7 @@ INTRO CONTAINER
 .beer.background_content{
     background: url("/assets/15.jpg") no-repeat center center;
     background-size: cover;
-    background-position: 70% 50%;
+    /*background-position: 70% 50%;*/
 }
 
 .bread.background_content{
@@ -294,7 +296,7 @@ INTRO CONTAINER
 DESCRIPTION BODY CONTENT
 =========================*/
 .description_content {
-    padding: 50px 0;
+    /*padding: 50px 0;*/
     width: 100%;
     background: #fff;
     margin: 0 auto 0 auto;
@@ -574,7 +576,7 @@ MEDIA QUERIES MOBILE
     }
 
     .second-title {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .background_content h1 {
@@ -586,6 +588,7 @@ MEDIA QUERIES MOBILE
         margin: 0px auto;
         /* display: block; */
     }
+
 }
 /*========================
 MEDIA QUERIES TABLET
@@ -599,6 +602,11 @@ MEDIA QUERIES TABLET
     .background_content h1 {
       top: 33%;
     }
+    .follow_container {
+      top: 250px;
+
+      position: absolute;
+    }
 }
 
 /*========================
@@ -609,6 +617,9 @@ MEDIA QUERIES TABLET
 
         .starter_container {
             height: 100%;
+        }
+        .follow_container {
+          top: 400px;
         }
 
     /*========================
@@ -869,4 +880,30 @@ MEDIA QUERIE DESKTOP
 }
 
 
-/*=============Tool Tip=================*/
+/*=============HR LINE=================*/
+
+
+hr.style1 {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+
+hr.style2 {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+
+/*=========NAVBAR========*/
+
+@media (min-width: 768px) and (max-width: 1000px) {
+   .navbar-collapse.collapse {
+       display: none !important;
+   }
+}
